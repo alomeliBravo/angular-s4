@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   standalone: false,
   // styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   public title:string = 'Hola Mundo';
   public counter:number = 10;
