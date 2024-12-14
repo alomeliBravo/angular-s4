@@ -20,4 +20,12 @@ export class HeroComponent {
     return `${this.name} - ${this.age}`;
   }
 
+  changeHero(value:string):void {
+    this.name = value;
+  }
+
+  changeAge(value:number):void {
+    this.age = value;
+  }
+
 }
