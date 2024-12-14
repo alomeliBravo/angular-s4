@@ -20,8 +20,4 @@ export class HeroComponent {
     return `${this.name} - ${this.age}`;
   }
 
-  get capitalizedName():string {
-
-  }
-
 }
