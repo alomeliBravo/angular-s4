@@ -16,10 +16,22 @@
 
 </dl>
 
-<button class="btn btn-primary mx-2" (click)="changeHero('Aoman');">
+<button
+  *ngIf="name !== 'Aoman' "
+  class="btn btn-primary mx-2"
+  (click)="changeHero('Aoman');">
   Cambiar Nombre
 </button>
 
-<button class="btn btn-primary" (click)="changeAge(32);">
+<button
+  *ngIf=" age !== 32 "
+  class="btn btn-primary"
+  (click)="changeAge(32);">
   Cambiar edad
+</button>
+
+<button
+  class="btn btn-primary mx-2"
+  (click)="resetForm()">
+  Reset
 </button>
