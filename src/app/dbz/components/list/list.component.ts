@@ -15,4 +15,13 @@ export class ListComponent {
     power: 10
   }]
 
+  onDeleteId(){
+
+  }
+
+  onDeleteCharacter(index:number):void {
+    //TODO: Emitir el ID del personaje
+    console.log(index);
+  }
+
 }
