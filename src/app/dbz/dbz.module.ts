@@ -1,9 +1,10 @@
-import { AddCharacterComponent } from './components/add-character/add-character.component';
 import { CommonModule } from '@angular/common';
-import { MainPageComponent } from './pages/main-page.component';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { ListComponent } from './components/list/list.component';
 
+import { AddCharacterComponent } from './components/add-character/add-character.component';
+import { ListComponent } from './components/list/list.component';
+import { MainPageComponent } from './pages/main-page.component';
 
 
 
@@ -15,6 +16,7 @@ import { ListComponent } from './components/list/list.component';
   ],
   imports: [
     CommonModule,
+    FormsModule
   ],
   exports: [
     MainPageComponent
