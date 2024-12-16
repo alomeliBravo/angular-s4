@@ -1,11 +1,17 @@
 <h4>Listado</h4>
+<!-- Todo lo que esté dentro de corchetes deja que angular lo controle -->
 <ul class="list-group">
   <li *ngFor="
     let character of characterList;
     let i = index;
     let isFirt = first;
-    let isLast = last;"
-    class="list-group-item">
+    let isLast = last;
+    let isEven = even"
+    class="list-group-item"
+    [ngClass]="{
+      'list-group-item-dark':isLast,
+      'list-group-item-primary': isEven
+    }">
     <span class="text-primary"> {{i + 1}} </span>
     <span>{{ character.name }} - </span>
     <strong>Power: </strong>
