@@ -22,4 +22,8 @@ export class MainPageComponent {
   onNewCharacter( character: Character ) {
     this.dbzService.addCharacter(character);
   }
+
+  github(){
+    console.log("hola");
+  }
 }
